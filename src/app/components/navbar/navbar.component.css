@@ -1,0 +1,56 @@
+.container-fluid {
+  color: white;
+}
+
+.sparks {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 170px;
+  top: 0px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: orangered;
+  box-shadow: -2px -2px 10px #fff,
+  2px 2px 10px #fff,
+  0 0 20px #f10,
+  0 0 40px #f10,
+  0 0 60px #f10,
+  0 0 80px #f10,
+  0 0 100px #f10;
+  animation: anim 1500ms linear infinite;
+}
+
+.circle:nth-child(2) {
+  animation-delay: 300ms;
+}
+
+.circle:nth-child(3) {
+  animation-delay: 600ms;
+}
+
+@keyframes anim {
+  0% {
+    transform-origin: 150% 75%;
+    transform: rotate(0);
+  }
+  50% {
+    transform-origin: 150% 75%;
+    transform: rotate(360deg);
+  }
+  51% {
+    transform-origin: -100% 75%;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: -100% 75%;
+    transform: rotate(360deg);
+  }
+}
+
+
+

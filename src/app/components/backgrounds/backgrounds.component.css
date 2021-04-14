@@ -1,0 +1,94 @@
+.container-fluid {
+  position: relative;
+  height: 110vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../../../assets/cinemaOne.jpg);
+  background-size: contain;
+  background-position: center;
+}
+
+.home {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+.home img {
+  cursor: pointer;
+}
+
+.home img:hover {
+  transform: rotate(360deg);
+}
+
+.hideTv {
+  width: 510px;
+  height: 220px;
+  position: relative;
+  left: 500px;
+  top: 280px;
+  border-radius: 10px;
+}
+
+.lapTop {
+  position: relative;
+  right: 40px;
+}
+
+.displayLapTop {
+  height: 230px;
+  width: 410px;
+  position: absolute;
+  bottom: 325px;
+  left: 97px;
+}
+
+.lapTop img {
+  width: 600px;
+  position: relative;
+  bottom: 30px;
+}
+
+.btn {
+  width: 180px;
+  height: 50px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid #ffc107;
+  position: absolute;
+  right: 100px;
+  bottom: 200px;
+}
+
+span {
+  background: #ffc107;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 800ms;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+  transform: rotate(360deg);
+}
+
+.no {
+  color: #ffc107;
+  font-size: 50px;
+  background-color: black;
+  height: 100%;
+  text-align: center;
+  line-height: 80px;
+}

@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <h1 class="top">Countdown Timer</h1>
+  <img src="../../../assets/house_PNG19.png" width="60px" (click)="home()" class="img">
+  <div class="text">Type Your Date: </div>
+  <input class="inp" type="text" placeholder="1 january 2022" [(ngModel)]="rodenden" (keydown)="countdown()">
+  <div class="countdown-container">
+    <div class="countdown-el days-c">
+      <p class="big-text" id="days">{{ days }}</p>
+      <span>days</span>
+    </div>
+    <div class="countdown-el hours-c">
+      <p class="big-text" id="hours">{{ hours }}</p>
+      <span>hours</span>
+    </div>
+    <div class="countdown-el mins-c">
+      <p class="big-text" id="mins">{{ minutes }}</p>
+      <span>mins</span>
+    </div>
+    <div class="countdown-el seconds-c">
+      <p class="big-text" id="seconds">{{ seconds }}</p>
+      <span>seconds</span>
+    </div>
+  </div>
+  <div class="bubbles">
+    <img src="../../../assets/bubble.png" alt="">
+    <img src="../../../assets/bubble.png" alt="">
+    <img src="../../../assets/bubble.png" alt="">
+    <img src="../../../assets/bubble.png" alt="">
+    <img src="../../../assets/bubble.png" alt="">
+    <img src="../../../assets/bubble.png" alt="">
+    <img src="../../../assets/bubble.png" alt="">
+  </div>
+</div>

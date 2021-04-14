@@ -1,0 +1,66 @@
+
+.container-fluid {
+  background-color: gray;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.someText {
+  position: relative;
+  top: 30px;
+  right: 30px;
+}
+
+.example-card {
+  width: 100%;
+  overflow-y: auto;
+  border: 2px solid white;
+  margin-bottom: 30px;
+  background-color:brown;
+}
+
+.head {
+  width: 800px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 50px;
+}
+
+.api img {
+  width: 800px;
+  position: relative;
+  left: calc(50% - 400px);
+  cursor: pointer;
+}
+
+.expl {
+  color: white;
+}
+
+.header {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header img {
+  cursor: pointer;
+}
+
+.header h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.picsTitle {
+  color: black;
+}
+
+
+

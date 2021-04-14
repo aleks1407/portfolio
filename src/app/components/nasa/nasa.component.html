@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="header">
+    <img src="../../../assets/house_PNG19.png" width="60px" (click)="projects()">
+    <div class="someText">
+      <h1>Space Pic Of The day</h1>
+      <p>*powered by Nasa Api</p>
+    </div>
+  </div>
+  <div class="api" *ngFor="let pics of nasa">
+    <mat-card class="example-card">
+      <mat-card-header class="head">
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title><h1><strong>Pic Of The Day</strong></h1></mat-card-title>
+          <mat-card-subtitle><h2 class="picsTitle"><strong>{{ pics.title }}</strong></h2></mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="pics.url">
+        <mat-card-content>
+          <p class="expl">
+          {{ pics.explanation }}
+          </p>
+          <h1><strong>{{ pics.date }}</strong></h1>
+          <p class="copy">Copyright: {{ pics.copyright }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+</div>

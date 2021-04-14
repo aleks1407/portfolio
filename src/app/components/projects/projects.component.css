@@ -1,0 +1,86 @@
+.container-fluid {
+  background-image: url(../../../assets/projects.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.projects {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  float: left;
+  margin: 210px auto;
+  margin-left: 150px;
+}
+
+.projects h2 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  top: 30px;
+  position: relative;
+}
+
+.projectsMe {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  top: 70px;
+}
+
+.btn {
+  width: 180px;
+  height: 50px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid #ffc107;
+  position: relative;
+  left: calc(50% - 90px);
+  top: 80px;
+}
+
+span {
+  background: #ffc107;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 800ms;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+  transform: rotate(360deg);
+}
+
+#backgrounds {
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../../../assets/backgrounds.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#timer {
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../../../assets/clocks.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#nasa {
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../../../assets/nasa.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
